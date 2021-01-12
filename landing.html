@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Features</a>
@@ -37,14 +37,20 @@
                   <a href="#" class="nav-link active">Contact Us</a>
               </li>
             </ul>
-            <form class="d-flex" style="padding-top: 15px">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit"></button>
+            <form class="d-flex" >
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
             </form>
           </div>
         </div>
       </nav>
     <!-- Navigation Bar -->
+
+
+
+
     <!-- Header -->
     <header class="header bg-dark">
         <div class="container">
@@ -52,8 +58,6 @@
               <div class="col-md-5" style="color: white" >
                 <h2 style="text-align: center;">Build Website using MDB</h2>
                     <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium cum est dolores voluptatum id optio tenetur modi minus ipsum corporis inventore cupiditate aperiam labore, exercitationem veniam animi esse aut! Excepturi consequatur perspiciatis esse mollitia, adipisci accusamus rerum quod quae deleniti cum perferendis officiis libero placeat corrupti ipsum dignissimos inventore est.</p>
-                    <!-- <button type="button" class="btn btn-outline-light btn-lg">Read More</button> -->
-                    <!-- <button type="button" class="btn btn-outline-light btn-lg">Play Video</button> -->
                 </div>
                 <div class="col-md-5">
                     <div class="form-box">
@@ -68,16 +72,16 @@
                             <img src="./img/tw.png" alt="">
                         </div>
                         
-                        <form class="input-group" id="login">
+                        <form class="input-group-1" id="login">
                             <input type="text" class="input-field" placeholder="User Id" required>
-                            <input type="text" class="input-field" placeholder="Enter Password" required>
+                            <input type="password" class="input-field" placeholder="Enter Password" required>
                             <div class="check_box"><input type="checkbox" class="check-box"><span> Remember Password </span></div>
                             <button type="submit" class="submit-btn">Log In</button>
                         </form>
-                        <form class="input-group" id="register">
+                        <form class="input-group-1" id="register">
                             <input type="email" class="input-field" placeholder="Email Id" required>
                             <input type="text" class="input-field" placeholder="User Id" required>
-                            <input type="text" class="input-field" placeholder="Enter Password" required>
+                            <input type="password" class="input-field" placeholder="Enter Password" required>
                             <div class="check_box"><input type="checkbox" class="check-box"><span> I agree to the terms & conditions </span></div>
                             <button type="submit" class="submit-btn">Register</button>
                         </form>
@@ -86,26 +90,26 @@
             </div>
         </div>
     </header>
-    <!-- Header -->
+<!-- Header -->
 
-    <!-- Section-1 -->
-<main class="bg-dark">
+<!-- main -->
+<main class="bg-dark"> 
+     <!-- Section-1 -->
     <section class="section1">
         <div class="course">
             <div class="container">
                 <div class="course-opt">
                     Courses Offered
                 </div>
-                <div class="owl-carousel owl-theme course-post">
-                    
+                <div class="owl-carousel owl-theme course-post"> 
                     <!-- _________________________ -->
-                    <div class="course-content">
+                    <div class="course-content"> 
                         <img src="./img/c1.jpg" alt="post-1">
                         <div class="course-title">
                             <h3>London Fashion Week's Continued the Evolution</h3>
                             <button class="btn btn-blog">Fashion</button>
                         </div>
-                    </div>
+                    </div> 
                     <!-- _________________________ -->
                     <div class="course-content">
                         <img src="./img/c2.jpg" alt="post-3">
@@ -122,20 +126,11 @@
                             <button class="btn btn-blog">Fashion</button>
                         </div>
                     </div>
-                    <!-- _________________________ -->
-                    <div class="course-content">
-                        <img src="./img/c2.jpg" alt="post-1">
-                        <div class="course-title">
-                            <h3>London Fashion Week's Continued the Evolution</h3>
-                            <button class="btn btn-blog">bashion</button>
-                        </div>
-                    </div>
-                    
                 </div>
-                <!-- <div class="owl-navigation">
-                    <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
-                    <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
-                </div>                     -->
+                  <!-- <div class="owl-navigation">
+                      <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                      <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  </div>                     -->
             </div>
         </div>
     </section>
@@ -144,7 +139,7 @@
     <!-- Section-2 -->
     <section class="section2 bg-dark">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
+            <div class="grid-container">
                 <div class="random col-md-6 text-align-center">
                     <i class="icon fa fa-money fa-2x"></i>
                     <h4 class="title">Low Fee</h4>
@@ -163,7 +158,7 @@
                 <div class="random col-md-6 text-align-center">
                     <i class="icon fa fa-support fa-2x"></i>
                     <h4 class="title">Support</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa blanditiis natus harum architecto praesentium recusandae consequuntur nulla ipsum, dolorem soluta, aperiam nostrum aliquam facilis reprehenderit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa blanditiis natus harum architecto praesentium recusandae consequuntur nulla ipsum, dolorem soluta, aperiam nostrum aliquam facilis.</p>
                 </div>
             </div>
         </div>
@@ -182,7 +177,7 @@
                 <img src="./img/img-1.jpeg" alt="">
                 </div>
                 <i class="fas fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt rerum, voluptas placeat blanditiis eos, laborum deserunt eius corrupti quam nam suscipit! Voluptatibus, dolorem! Dolorem, mollitia cum ipsum commodi, velit quia sunt cupiditate sed, illo nisi libero corrupti? Maxime fugiat itaque ea, libero sequi aspernatur consequatur quidem aperiam similique fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illo ratione vel repellendus, aspernatur soluta fugiat? Minima ab corrupti illum distinctio placeat! Assumenda, odit ipsum cupiditate nesciunt maxime odio repellendus?</p>
                 <p class="name">Olivia Smith</p>
                 <p class="job">Director</p>
             </div>
@@ -191,7 +186,7 @@
                 <img src="./img/img-2.jpeg" alt="">
                 </div>
                 <i class="fas fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt rerum, voluptas placeat blanditiis eos, laborum deserunt eius corrupti quam nam suscipit! Voluptatibus, dolorem! Dolorem, mollitia cum ipsum commodi, velit quia sunt cupiditate sed, illo nisi libero corrupti? Maxime fugiat itaque ea, libero sequi aspernatur consequatur quidem aperiam similique fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo in, exercitationem nesciunt natus itaque ducimus officiis dicta reiciendis assumenda laudantium incidunt suscipit dolore nisi ipsum blanditiis, quod velit minus.</p>
                 <p class="name">John Doe</p>
                 <p class="job">Director</p>
             </div>
@@ -200,15 +195,87 @@
                 <img src="./img/img-3.jpeg" alt="">
                 </div>
                 <i class="fas fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit incidunt rerum, voluptas placeat blanditiis eos, laborum deserunt eius corrupti quam nam suscipit! Voluptatibus, dolorem! Dolorem, mollitia cum ipsum commodi, velit quia sunt cupiditate sed, illo nisi libero corrupti? Maxime fugiat itaque ea, libero sequi aspernatur consequatur quidem aperiam similique fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit magni perspiciatis, facere vel obcaecati sequi dicta delectus exercitationem eaque aspernatur ut, at quo inventore perferendis adipisci blanditiis vero voluptas!</p>
                 <p class="name">Harry Potter</p>
                 <p class="job">Wizard</p>  
             </div>
         </div>
     </section>
-
     <!-- Section-3 -->
-</main>
+<!-- </main> -->
+<!-- main -->
+
+<!-- footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <section class="section4">
+    <div class="container p-4">
+      <div class="khatam">
+
+        <div class="first grid-item">
+          <div> Footer Content </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dicta, iure alias voluptatem labore dolorum vel aliquid nobis corporis rem voluptatum reprehenderit exercitationem debitis omnis, fugit in? Praesentium nobis ex fuga repellat? Molestias cupiditate nostrum quisquam quod est minus neque autem odio. Exercitationem dolore, vero distinctio aut sunt aliquid placeat.
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="second">
+              <h4 class="text-uppercase">Links</h4>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-muted">Fee Info</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Start Trading</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">We are Hiring</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Blog Posts</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="second">
+              <h4 class="text-uppercase">Links</h4>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-muted">About Us</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Help & Support</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Terms & Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <div class="text-center p-3">
+      © 2020 Copyright: 
+      <a class="text-light" href="https://mdbootstrap.com/"> MDBootstrap.com </a>
+    </div>
+
+    </section>
+</footer>
+<!-- footer -->
+
+ 
+  
+
+
+
 
 
 </body>
