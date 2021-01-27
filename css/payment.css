@@ -56,7 +56,7 @@ td:first-child {
   display: none;
 }
 
-@media screen and (max-width: 620px) {
+@media (max-width: 620px) {
   th:first-child,
   td:first-child {
     font-weight: bold;
@@ -71,6 +71,14 @@ td:first-child {
   .visible-xs td {
     width: 100vw;
   }
+
+  tr{
+      font-size: 70%;
+  }
+}
+
+@media (max-width: 390px){
+    
 }
 
 /* table */

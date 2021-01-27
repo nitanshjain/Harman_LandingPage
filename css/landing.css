@@ -57,12 +57,52 @@ header .container {
   z-index: 2;
 }
 
+header .text5{
+    font-family: 'Oswald', serif; 
+    color: rgb(255, 255, 255); 
+    font-size: 500%;
+}
+
+header .lead{
+    font-family: 'Oswald', serif; 
+    color: rgb(255, 255, 255); 
+    font-size: 200%;
+}
+
 header .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
+}
+
+@media (max-width: 450px){
+    header .text5{
+        font-family: 'Oswald', serif; 
+        color: rgb(255, 255, 255); 
+        font-size: 340%;
+    }
+    
+    header .lead{
+        font-family: 'Oswald', serif; 
+        color: rgb(255, 255, 255); 
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 320px){
+    header .text5{
+        font-family: 'Oswald', serif; 
+        color: rgb(255, 255, 255); 
+        font-size: 240%;
+    }
+    
+    header .lead{
+        font-family: 'Oswald', serif; 
+        color: rgb(255, 255, 255); 
+        font-size: 100%;
+    }
 }
 
 /* whathowwhen */
