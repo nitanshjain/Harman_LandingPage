@@ -12,6 +12,7 @@ body {
 /* navbar */
 
 .navbar {
+  font-size: 16px;
   z-index: 5;
   position: fixed;
   box-shadow: 0 0 10px 5px white;
@@ -64,22 +65,20 @@ header .overlay {
   width: 100vw;
 }
 
-
-
 /* whathowwhen */
 
 .whathowwhen {
-  margin: 6.8% 0;
   color: white;
-  text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .whathowwhen ul {
   list-style: inside;
   text-align: left;
-  /* padding-right: auto; */
-  padding-bottom: 2%;
   opacity: 0.7;
 }
 
@@ -91,27 +90,24 @@ header .overlay {
 
 .titles .headings {
   font-size: 25px;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
 }
 
 .what {
   background: rgb(0, 0, 0);
-  padding: 5% 2%;
-  margin-top: 13%;
-  margin-left: 20%;
-  border-radius: 30px;
+  padding: 5% 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+  border-radius: 30px;
   width: 60vw;
 }
 
 .how {
   background: rgb(0, 0, 0);
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* padding-left: 2%; */
-  padding-right: 2%;
+  padding: 5% 5%;
   margin-top: 5%;
-  margin-left: 20%;
+  margin-bottom: 5%;
   box-shadow: 0 0 10px 0 rgb(255, 255, 255);
   border-radius: 30px;
   width: 60vw;
@@ -119,13 +115,34 @@ header .overlay {
 
 .when {
   background: rgb(0, 0, 0);
-  padding: 5% 2%;
+  padding: 5% 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 20%;
   box-shadow: 0 0 10px 0 rgb(255, 255, 255);
   border-radius: 30px;
   width: 60vw;
+}
+
+@media (max-width: 720px) {
+  .titles .caps {
+    font-size: 105%;
+  }
+
+  .titles .headings {
+    font-size: 100%;
+  }
+
+  .what {
+    font-size: 80%;
+  }
+
+  .how {
+    font-size: 80%;
+  }
+
+  .when {
+    font-size: 80%;
+  }
 }
 
 /* whathowwhen */
@@ -191,51 +208,47 @@ header .overlay {
 
 /* Section3 */
 
-
 .center1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
 }
-  
+
 .cardp {
-    width: 25rem;
-    background: black;
+  width: 25rem;
+  background: black;
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+  color: white;
+}
+
+.cardp h2 {
+  padding: 1% 0;
+}
+
+.cardp blockquote {
+  padding: 0 2%;
+}
+
+@media (max-width: 800px) {
+  .section3 {
+    padding: 3% 0;
+  }
+
+  .center1 {
+    flex-direction: column;
+  }
+
+  .cardp {
+    width: 50vw;
     position: relative;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
-    margin-bottom: 10%;
-    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
-    color: white;
-}
-
-.cardp h2{
-    padding: 1% 0;
-}
-
-.cardp blockquote{
-    padding: 0 2%;
-}
-
-@media (max-width: 800px){
-
-    .section3{
-        /* background: red; */
-        padding: 3% 0;
-    }
-
-    .center1{
-        display: initial;
-    }
-
-    .cardp{
-        width: 60vw;
-        position: relative;
-        left: 20%;
-    }
-
+    left: 20%;
+  }
 }
 
 /* Section3 */

@@ -92,10 +92,4 @@ form.addEventListener('submit', function(e) {
   checkPasswords(password, password2);
 });
 
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-  
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
+
